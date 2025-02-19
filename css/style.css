@@ -1,0 +1,968 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(55, 63, 130);
+    font-size: 16px;
+    font-family: 'Staatliches', cursive;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    
+    width: 100%;
+    margin: auto;
+    
+    
+}
+
+.nav-main{
+    height: 100px;
+    background: rgb(18, 24, 78);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 10px   rgb(61, 70, 154);
+    height: 60px;
+    padding: 20px 0;
+}
+.nav-main h1{
+    margin-left: 100px;
+    letter-spacing: 5px;
+    font-size: 29px;
+    color: rgb(244, 83, 83);
+}
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    
+    letter-spacing: 2px;
+    font-size: 25px;
+    
+}
+.nav-link{
+    display: block;
+    padding: 20px;
+}
+.nav-main ul li a:hover{
+    color:  rgb(244, 83, 83);
+
+}
+
+
+ 
+.grid_contenedor{
+    display: grid;
+    grid-template-columns: 50% 30% ;
+    margin-top: 150px;
+}
+.info h1{
+    font-size: 50px;
+}
+
+
+.grid_contenedor .info{
+    margin-top: 100px;
+    text-align: center;
+    
+    font-size: 25px;
+    color: white;
+}
+
+.grid_contenedor .info span{
+    color: rgb(244, 83, 83);
+}
+.grid_contenedor .info .bienvenida{
+    color: gray;
+}
+
+.grid_contenedor .imagen{
+    
+    border: 10px solid  rgb(18, 24, 78);
+  
+    border-radius: 100%;
+    margin: auto;
+}
+
+.botones_inicio{
+    margin-top: 25px;
+}
+.botones_inicio .Cv { 
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background:rgb(244, 83, 83);
+    margin: 10px 0 ;
+    margin-right: 5px;
+}
+
+.botones_inicio .Contacto{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background: rgb(26, 30, 65);
+    margin: 10px 0;
+}
+
+.redes a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .2s;
+
+}
+
+.redes a:hover{
+    background:rgb(244, 83, 83);
+    
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(240, 0, 0);
+
+}
+
+.que_hago{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: rgb(18, 24, 78);
+    margin-top: 250px;
+}
+
+.contenedor_mi{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+   
+    text-align: center;
+    
+    justify-content: space-between;
+}
+
+.contenedor_mi i{
+    font-size: 35px;
+    color: rgb(244, 83, 83);
+}
+
+.contenedor_mi h1{
+    color: white;
+    margin-top: 20px;
+}
+
+
+.contenedor_mi p{
+    color: white;
+    margin-top: 20px;
+}
+.info_mi{
+    text-align: center;
+    margin-left: 25px;
+}
+.info_mi h1{
+    margin-top: 50px;
+    
+    font-size: 50px;
+    color: white;
+}
+.info_mi span{
+    color: rgb(244, 83, 83);
+}
+
+.info_mi p{
+    margin-top: 20px;
+    font-size: 20px;
+    white-space: pre-line;
+    
+    color: white;
+}
+
+.datos_personales{
+    margin-top: 100px;
+}
+.datos_personales h1{
+    color: white ;
+   
+
+}
+
+.grid_datos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+ 
+    max-width: 1100px;
+    margin: auto;
+}
+
+.info_personal{
+justify-content: space-between;
+font-size: 20px;
+    
+}
+.info_personal p{
+    color: white;
+    padding: 5px;
+}
+.datos_personales span{
+    color: rgb(244, 83, 83);
+
+}
+
+
+.grid_intereses{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    margin-top: 20px;
+    
+}
+.datos_personales .mis_intereses .interes{
+    width: 100px;
+    height: 100px;
+    background: rgb(18, 24, 78);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.interes i{
+    color: white;
+    font-size: 20px;
+}
+
+.interes span{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.habilidades{
+    background: rgb(18, 24, 78);
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+   
+    text-align: center;
+}
+
+
+.habilidades h1{
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: white;
+}
+
+.container_habilidades{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.container_habilidades .card{
+    border-radius: 20px;
+    position: relative;
+    width: 220px;
+    height: 250px;
+    background: rgb(55, 63, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_habilidades .card .porcent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+   
+    
+    
+}
+
+.container_habilidades .card .porcent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+     transform: rotate(270deg);
+    
+
+}
+
+.container_habilidades .card .porcent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke:black;
+    transform: translate(5px,5px);
+}
+
+.container_habilidades .card .porcent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440 ;
+    stroke-dashoffset: calc(440 - (440 * var(--num) )/ 100);
+    opacity: 0;
+    animation: fadein 1s linear forwards ;
+    animation-delay: 2.5s;
+
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.dot{
+    position: absolute;
+    z-index: 10;
+    inset:5px;
+
+    animation: animatedot 2s linear forwards infinite;
+
+
+}
+
+@keyframes animatedot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc( 3.6deg * var(--num) ));
+    }
+}
+
+.dot::before{
+    content: ' ';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow:  0 0 10px var(--clr),0 0 30px var(--clr);
+}
+
+.estudiado{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadein 1s linear forwards ;
+    animation-delay: 2.5s;
+}
+
+.estudiado h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
+    
+}
+
+.estudiado  span{
+    font-weight: 300;
+    color: white;
+    font-size: 0.5em;
+    
+}
+
+.estudiado p{
+    font-weight: 300;
+    font-size: 1.20em;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: rgb(244, 83, 83);
+}
+
+.container_servicios h1{
+    
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.container_servicios h2{
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    color:  rgb(244, 83, 83);
+}
+
+.servicios{
+    
+    width: 100%;
+    padding: 100px 0px;
+   
+ 
+}
+
+.servicios_grid{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 400px;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 15px;
+    
+    
+   
+   
+}
+
+.servicios_grid .precio span{
+    color: green;
+}
+
+.servicio_basico{
+    height: 450px;
+    width: 335px;
+    padding: 20px 35px ;
+    background: white;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+
+}
+
+.servicio_basico h2{
+    font-size: 29px;
+    color:  rgb(244, 83, 83) ;
+}
+
+.precio{
+    font-size: 20px;
+}
+
+.servicio_basico .info_servis  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.servicio_basico .info_servis p{
+    padding: 10px;
+    
+}
+
+ .numero_pagina{
+    font-size: 25px;
+    color:  rgb(244, 83, 83) ;
+}
+
+
+.servicio_medio{
+    height: 450px;
+    width: 335px;
+    padding: 20px 35px;
+    background: white;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow:  black;
+
+}
+
+.servicio_medio h2{
+    font-size: 29px;
+    color:  rgb(244, 83, 83) ;
+
+}
+
+.servicio_medio .info_servis  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.servicio_medio .info_servis p{
+    padding: 10px;
+    
+}
+
+.servicio_Premium{
+    height: 450px;
+    width: 335px;
+    padding: 20px 35px;
+    background: white;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+
+
+.servicio_Premium h2{
+    font-size: 29px;
+    color:  rgb(244, 83, 83) ;
+
+}
+
+.servicio_Premium .info_servis  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.servicio_Premium .info_servis p{
+    padding: 10px;
+    
+}
+
+.servicio_basico:hover{
+    box-shadow: 10px 10px 20px  rgb(18, 24, 78),-10px -10px 20px  rgb(18, 24, 78);
+}
+
+.servicio_medio:hover{
+    box-shadow: 10px 10px 20px  rgb(18, 24, 78),-10px -10px 20px  rgb(18, 24, 78);
+}
+.servicio_Premium:hover{
+    box-shadow: 10px 10px 20px  rgb(18, 24, 78),-10px -10px 20px  rgb(18, 24, 78);
+}
+.contacto{
+ width: 100%;
+ padding-top: 70px;
+ padding-bottom: 170px;
+ background:  rgb(18, 24, 78) ;
+ 
+
+
+}
+.contacto h1{
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+ 
+    
+}
+
+.contacto_container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 1.5rem;
+   
+
+}
+.container_contacto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: rgb(39, 56, 99);
+    border-radius: 20px;
+   
+
+}
+
+.container_contacto > *{
+    padding: 1rem;
+}
+.contacto_form h2{
+    font-size: 25px;
+    color:rgb(244, 83, 83);
+    
+}
+.contacto_form form{
+    margin: 0;
+    padding: 1rem;
+}
+
+.contacto_form p{
+    color: white;
+    font-size: 20px;
+}
+
+.contacto_form form input,
+.contacto_form form textarea,
+.contacto_form form button{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid  rgb(244, 83, 83);
+}
+
+.contacto_form form button{
+    cursor:pointer;
+    background: rgb(244, 83, 83);
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.info_contacto{
+    background: black;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+ 
+}
+
+.contacto_datos{
+    display: grid;
+    grid-template-rows: 50% 50% 50%  ;
+    margin-top: 20px;
+}
+
+.contacto_datos p{
+    font-size: 20px;
+}
+ 
+
+.redes_final{
+    text-align: center;
+}
+.redes_final h1{
+    margin-bottom: 25px;
+    color: white;
+    letter-spacing: 2px;
+}
+.redes_final .redes a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+      .hamburger{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+       transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-link{
+        padding: 20px;
+    }
+    .enlaces ul{
+        display: flex;
+        float: right  ;
+
+    }
+    .enlaces {
+       
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(18, 24, 78);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+ 
+   
+        
+    
+    
+    .enlaces.active{
+        left:0;
+    }
+
+    .grid_contenedor{
+        display: grid;
+        grid-template-columns: 80%  ;
+        margin-top: 150px;
+    }
+    .grid_contenedor .imagen{
+        margin-left: 20px;
+    }
+    .grid_contenedor .imagen img{
+       
+        width: 320px;
+    }
+
+  
+    .info{
+        margin-left: 50px;
+        
+    }
+    
+    .bienvenida p{
+        font-size: 30px;
+    }
+
+    .info h1{
+        
+        font-size: px;
+    }
+
+    .info .bienvenida {
+        font-size: 25px;
+    }
+
+    .info p{
+        font-size: 25px;
+    }
+
+    .botones_inicio .Cv{
+        font-size: 20px;
+    }
+
+    .botones_inicio .Contacto{
+        font-size: 20px;
+    }
+
+  
+    
+    .contenedor_mi i{
+        font-size: 25px;
+      
+    }
+    
+    .contenedor_mi h1{
+        font-size: 20px;
+       
+    }
+    
+    
+    .contenedor_mi p{
+        font-size: 12px;
+        
+    }
+    
+    .datos_personales h1{
+       font-size: 20px;
+       margin-left: 10px;
+       
+    
+    }
+    .info_personal{
+        justify-content: space-between;
+        font-size: 15px;
+            
+        }
+
+     .grid_intereses{
+            display: grid;
+            grid-template-columns: 39% 39%;
+            margin-top: 20px;
+            
+        }
+
+    .datos_personales .mis_intereses .interes{
+            width: 65px;
+            height: 65px;
+            background: rgb(18, 24, 78);
+            border-radius: 10px;
+            margin: 0 15px 15px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+        }
+        
+     .interes i{
+            color: white;
+            font-size: 19px;
+        }
+        
+     .interes span{
+            font-size: 12px;
+            margin-top: 5px;
+        }
+      
+        .servicios_grid{
+            display: grid;
+            margin-left: 50px;
+           
+           
+        }
+
+        .servicio_basico{
+            height: 472px;
+            width: 270px;
+            padding: 20px 35px ;
+            background: white;
+            border-radius: 20px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+           
+        
+        }
+       
+        .servicio_medio{
+            height: 472px;
+            width: 270px;
+        }
+
+        .servicio_Premium{
+            height: 472px;
+            width: 270px;
+        }
+
+        .container_contacto{
+            display: grid;
+            grid-template-columns: 100%  ;
+        }
+        
+        .contacto_container p{
+            font-size: 10px;
+            text-align: center;
+            
+        }
+
+        .contacto_form p{
+            color: white;
+            font-size: 25px;
+        }
+         .info_contacto{
+            padding-bottom: 139px;
+            border-top-right-radius: none;
+         }
+        .info_contacto p{
+            font-size: 15px;
+        }
+
+    }
+       
+   
+/*
+.presentacion{
+    background-color: black;
+    max-width: 350px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.presentacion .contenedor img {
+    margin-top: 40px;
+    border: 10px solid  rgb(14, 211, 211); 
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+
+
+
+
+
+}
+
+.contenedor .info h1{
+    margin-top: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+.info p{
+    font-size: 15px;
+    color: white;
+}
+
+.contenedor .redes a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .2s;
+
+}
+
+.contenedor .redes a:hover{
+    background: rgb(14, 211, 211);
+}
+*/ 
